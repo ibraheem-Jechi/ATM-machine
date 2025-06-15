@@ -20,30 +20,32 @@ while option !=4:
              1. Check Balance
              2. Deposit Money
              3. Withdraw Money
-             4. Exit""")
+             4. Exit
+           """)
     
-    option = int(input("What do you want to do: "))
+    option = int(input("How Can I Hwlp You: "))
 
     if option == 1:
         newBalance = balance
         print ("Your current Balance is: " +str(newBalance)+ "$")
 
     elif option == 2:
-       deposit=float(input ("Amount you want to deposit= "))
+       deposit=float(input ("Please Enter the Amount you need to Deposit:  "))
     #    balance.append(deposit)
        balance += deposit
        print("Your Current balance is "+str(balance)+"$")
     elif option == 3:
-        withdraw = float(input("Amount you want to withdraw= "))
+        withdraw = float(input("Please Enter the Amount you need to Withdraw: "))
         if balance>=withdraw:
          balance -= withdraw
         else:
-           print("Not Enough Money")
+           print("Sorry, No Enough Money")
            print("Your current balance is "+str(balance)+ "$")
           
     elif option == 4:
 
-        print("you added " +str(deposit)+ "$ and withdrawed " +str(withdraw)+"$")
+        print("Amount added= " +str(deposit)+ "$" )
+        print("Amount withdrawed= " +str(withdraw)+"$")
         print("You are welcomed")
 
     else:
